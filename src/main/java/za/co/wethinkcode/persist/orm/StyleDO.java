@@ -1,19 +1,21 @@
 package za.co.wethinkcode.persist.orm;
 
-//import com.j256.ormlite.field.DatabaseField;
-//import com.j256.ormlite.table.DatabaseTable
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
 
-//@DatabaseTable( tableName = "styles" )
+@DatabaseTable(tableName = "styles")
 public class StyleDO {
-    // @DatabaseTable(tableName = "styles")
+    @DatabaseField(id = true)
     private int id;
 
-    // @DatabaseField
+    @DatabaseField
     private String name;
 
+    // Default constructor required by ORMLite
     StyleDO() {
     }
 
+    // Getters and Setters
     public int getId() {
         return this.id;
     }
@@ -29,5 +31,4 @@ public class StyleDO {
     public void setName(String name) {
         this.name = name;
     }
-
 }

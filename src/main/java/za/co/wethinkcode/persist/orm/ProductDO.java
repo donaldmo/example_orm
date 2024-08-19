@@ -1,44 +1,43 @@
 package za.co.wethinkcode.persist.orm;
 
-// import net.lemnik.eodsql.ResultColumn;
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
 
-/**
- * TODO: javadoc ProductDO
- */
+@DatabaseTable(tableName = "products")
 public class ProductDO {
+    @DatabaseField(generatedId = true)
     private int id;
+
+    @DatabaseField(canBeNull = false)
     private String name;
+
+    @DatabaseField
     private String styleName;
 
     public ProductDO() {
     }
 
-    public ProductDO(String name) {
-        this.name = name;
-        this.styleName = "";
+    public int getId() {
+        return id;
     }
 
-    public int getPrimaryKey() {
-        return this.id;
-    }
-
-    public void setPrimaryKey(int key) {
-        this.id = key;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getStyle() {
-        return this.styleName;
+    public String getStyleName() {
+        return styleName;
     }
 
-    public void setStyle(String styleName) {
+    public void setStyleName(String styleName) {
         this.styleName = styleName;
     }
 }

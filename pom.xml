@@ -15,22 +15,43 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
+  <!-- https://mvnrepository.com/artifact/io.javalin/javalin -->
+  <dependency>
+      <groupId>io.javalin</groupId>
+      <artifactId>javalin</artifactId>
+      <version>6.2.0</version>
+  </dependency>
+
+
     <dependency>
       <groupId>org.xerial</groupId>
       <artifactId>sqlite-jdbc</artifactId>
       <version>3.36.0.3</version>
     </dependency>
-    
-    <!-- <dependency>
-      <groupId>net.lemnik</groupId>
-      <artifactId>eodsql</artifactId>
-      <version>2.2</version>
-    </dependency> -->
+
+<!-- ORMLite Dependency -->
+        <dependency>
+            <groupId>com.j256.ormlite</groupId>
+            <artifactId>ormlite-core</artifactId>
+            <version>5.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.j256.ormlite</groupId>
+            <artifactId>ormlite-jdbc</artifactId>
+            <version>5.7</version>
+        </dependency>
+
+        <!-- JDBC Driver (Example for MySQL, adjust accordingly) -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
 
     <dependency>
       <groupId>junit</groupId>
