@@ -1,4 +1,4 @@
-package za.co.wethinkcode.persit.orm;
+package za.co.wethinkcode.persist.orm;
 
 //import com.j256.ormlite.field.DatabaseField;
 //import com.j256.ormlite.table.DatabaseTable
