@@ -1,0 +1,17 @@
+### POST a product
+POST http://localhost:7000/products
+Content-Type: application/json
+
+{
+  "name": "Cool T-shirt",
+  "styleName": "Casual"
+}
+
+
+### GET All Products
+GET http://localhost:7000/products
+
+
+### GET a product by ID
+GET http://localhost:7000/products/1
+
